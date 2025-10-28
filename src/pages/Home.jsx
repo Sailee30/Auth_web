@@ -11,8 +11,8 @@ export default function Home() {
   const abortRef = useRef(null);
 
   // ESP32 hotspot IP is 192.168.4.1 by default — we'll use that.
-  const ESP32_IP = process.env.REACT_APP_ESP32_IP 
-  const SECRET = process.env.REACT_APP_SECRET
+  const ESP32_IP = process.env.REACT_APP_ESP32_IP; 
+  const SECRET = process.env.REACT_APP_SECRET;
 
   useEffect(() => {
     let e = localStorage.getItem("email");
